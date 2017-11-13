@@ -1,0 +1,16 @@
+{
+  "name": "pedantic-count",
+  "version": "1.0.0",
+  "description": "Overly verbose, indexable, linkable, gherkinable numbers.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run-script build",
+    "test": "./node_modules/.bin/cucumber.js",
+    "build": "cp ./src/count.js ./index.js && cp ./src/count.js ./browser.js && sed -i 's/exports/window/g' browser.js"
+  },
+  "devDependencies": {
+    "cucumber": "^3"
+  },
+  "author": "franko <code@akr.club> (http://akr.club)",
+  "license": "ISC"
+}

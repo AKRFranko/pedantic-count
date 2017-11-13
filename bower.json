@@ -1,0 +1,21 @@
+{
+  "name": "pedantic-count",
+  "description": "Overly verbose, indexable, linkable, gherkinable numbers.",
+  "main": "browser.js",
+  "authors": [
+    "franko <code@akr.club> (http://akr.club)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Number"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
