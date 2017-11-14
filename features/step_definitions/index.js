@@ -79,5 +79,8 @@ defineSupportCode(function({Given, When, Then}) {
    return assert.ok(text.length);
  });
  
+ When('I reset the {string} for id {int}', function (string, int) {
+   return assert.ok(Index.resetCount(string, int ))
+ });
  
 });

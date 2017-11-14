@@ -506,6 +506,15 @@
         return this.map.get( name ).get('ids').get(id).decr( n )
       }
     }
+    
+    static resetCount( name, id){
+      if(!this.hasCount( name, id )){
+        return true;
+        // throw new ReferenceError('No count for id "'+id+'".');
+      }else{
+        return this.map.get( name ).get('ids').get(id).reset()
+      }
+    }
   
     static getHistory( name, id ){
       if(!this.hasCount( name, id )){

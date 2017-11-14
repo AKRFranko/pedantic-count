@@ -51,6 +51,7 @@ defineSupportCode(function({Given, When, Then}) {
   });
   
   Then('I get a clear human-readable explanation', function () {
+    console.log(result)
     var expected = 'Scenario: Explain a CountWhen I initialize to 0And I increment by 10And I increment by 10And I increment by 10And I increment by 10And I increment by 10And I increment by 10And I reset to 0And I increment by 5And I increment by 5Then the value equals 10'
     return assert.equal( result.replace(/[\n\s\t]+/g,''),expected.replace(/[\n\s\t]+/g,''));
   });

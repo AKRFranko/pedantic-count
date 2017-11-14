@@ -188,3 +188,7 @@ Scenario: Indexes can be verbosely logged.
   When I ask for an explanation for "stockCount" of 0
   Then I get an explanation for "stockCount" of 0
       
+Scenario: Indexes can be reset
+  Given we use the same index as above
+  When I reset the "selectedQuantity" for id 0
+  Then the item with id 0 should have a "selectedQuantity" of 0
