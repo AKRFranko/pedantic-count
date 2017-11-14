@@ -484,26 +484,26 @@
       }
     }
     
-    static incrCount( name, id, n ){
+    static incrCount( name, id, n, msg ){
       if(!this.hasCount( name, id )){
         if(virtMap.has(name)){
           this.setCount( name, id, virtMap.get(name));
-          return this.incrCount( name, id, n );
+          return this.incrCount( name, id, n , msg);
         }
         throw new ReferenceError('No count for id "'+id+'".');
       }else{
-        return this.map.get( name ).get('ids').get(id).incr( n );
+        return this.map.get( name ).get('ids').get(id).incr( n , msg);
       }
     }
-    static decrCount( name, id, n ){
+    static decrCount( name, id, n, msg ){
       if(!this.hasCount( name, id )){
         if(virtMap.has(name)){
           this.setCount( name, id, virtMap.get(name));
-          return this.decrCount( name, id, n );
+          return this.decrCount( name, id, n , msg);
         }
         throw new ReferenceError('No count for id "'+id+'".');
       }else{
-        return this.map.get( name ).get('ids').get(id).decr( n )
+        return this.map.get( name ).get('ids').get(id).decr( n , msg)
       }
     }
     
@@ -568,12 +568,12 @@
       return CountIndex.getCount( this.name, id );
     }
     
-    incr( id, n ){
-     return CountIndex.incrCount( this.name, id, n );
+    incr( id, n , msg){
+     return CountIndex.incrCount( this.name, id, n , msg);
     }
     
-    decr( id, n ){
-     return CountIndex.decrCount( this.name, id, n );
+    decr( id, n, msg ){
+     return CountIndex.decrCount( this.name, id, n , msg);
     }
     
     

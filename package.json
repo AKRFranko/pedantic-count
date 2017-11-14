@@ -1,6 +1,6 @@
 {
   "name": "pedantic-count",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Overly verbose, indexable, linkable, gherkinable numbers.",
   "main": "index.js",
   "scripts": {
