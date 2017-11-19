@@ -1,4 +1,3 @@
-(()=>{
   /**
   * @file Count.js
   * @author Franko <franko@akr.club>
@@ -603,10 +602,9 @@
     }
   }
   
-  
- exports.CountIndex = CountIndex;
- exports.Count = BaseCount;
- exports.StrictCount = StrictCount;
- exports.LoggingCount = LoggingCount;
- 
-})();
+module.exports = {
+  CountIndex:CountIndex,
+  BaseCount:BaseCount,
+  StrictCount:StrictCount,
+  LoggingCount:LoggingCount
+}  
