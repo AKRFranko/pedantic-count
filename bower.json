@@ -1,7 +1,7 @@
 {
   "name": "pedantic-count",
   "description": "Overly verbose, indexable, linkable, gherkinable numbers.",
-  "main": "browser.js",
+  "main": "index.js",
   "authors": [
     "franko <code@akr.club> (http://akr.club)"
   ],
