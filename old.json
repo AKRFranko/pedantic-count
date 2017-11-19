@@ -1,0 +1,1 @@
+"build": "cp ./src/count.js ./index.js && cp ./src/count.js ./browser.js && sed -i 's/exports/window/g' browser.js"

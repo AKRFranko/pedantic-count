@@ -1,6 +1,6 @@
 var {defineSupportCode} = require('cucumber');
 var assert = require('assert');
-var Index = require( process.cwd() + '/index.js' ).CountIndex;
+var Index = require( process.cwd() + '/browser.js' ).CountIndex;
 
 
 defineSupportCode(function({Given, When, Then}) {

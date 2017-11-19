@@ -1,6 +1,6 @@
 var {defineSupportCode} = require('cucumber');
 var assert = require('assert');
-var Count = require( process.cwd() + '/index.js' ).LoggingCount;
+var Count = require( process.cwd() + '/browser.js' ).LoggingCount;
 
 class TestClass{
   
