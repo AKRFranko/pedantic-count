@@ -26,6 +26,8 @@
       return histMap.get(object);
   };
   
+  
+  
   /**
   * loglines memo
   * @const loglines
@@ -548,6 +550,7 @@
     }
     
     constructor( name ){
+      
       this.name = name;
     } 
     
@@ -598,13 +601,15 @@
   class VirtualIndex extends CountIndex{
     constructor( name ){
       super(name);
+      
       this.virtual = true;
     }
   }
   
+  
 module.exports = {
   CountIndex:CountIndex,
-  BaseCount:BaseCount,
+  Count:BaseCount,
   StrictCount:StrictCount,
   LoggingCount:LoggingCount
 }  

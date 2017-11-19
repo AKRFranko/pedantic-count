@@ -1,6 +1,6 @@
 var {defineSupportCode} = require('cucumber');
 var assert = require('assert');
-var Count = require( process.cwd() + '/browser.js' ).LoggingCount;
+var Count = require( process.cwd() + '/index.js' ).LoggingCount;
 
 
 defineSupportCode(function({Given, When, Then}) {
@@ -51,7 +51,7 @@ defineSupportCode(function({Given, When, Then}) {
   });
   
   Then('I get a clear human-readable explanation', function () {
-    console.log(result)
+    // console.log(result)
     var expected = 'Scenario: Explain a CountWhen I initialize to 0And I increment by 10And I increment by 10And I increment by 10And I increment by 10And I increment by 10And I increment by 10And I reset to 0And I increment by 5And I increment by 5Then the value equals 10'
     return assert.equal( result.replace(/[\n\s\t]+/g,''),expected.replace(/[\n\s\t]+/g,''));
   });
